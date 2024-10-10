@@ -29,8 +29,4 @@ jobs:
           # Pull the latest code
           git pull origin main
 
-          # Install dependencies
-          npm install
-          # Restart the app using PM2 (or node directly if you prefer)
-          pm2 restart all || pm2 start app.js
         EOF
